@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Fontin';
+    src: url(/Fontin-SmallCaps.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: block;
+}
+
+main {
+    display: block;
+    height: 40rem;
+}
+
+footer {
+    display: block;
+}
+
+body {
+    font-family: 'Fontin', system-ui, sans-serif;
+    background-image: url("/images/misc/wraeclast.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+}
+
+h1{
+    color: white;
+}
+
+h5 {
+    margin-bottom: 0.1rem;
+    padding: 0;
+    color: lightgray;
+}
+
+a {
+    color: rgb(255,164,36, 0.9);
+    transition: 0.3s;
+}
+
+a:hover {
+    color: silver;
+    transition: 0.3s;
+}
+
+#bg {
+    position: fixed;
+    opacity: 0.05;
+    inset: 0;
+    z-index: -1;
+}
+
+section {
+    background: #111;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+section.transparent {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#content-holder{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#game-mode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#optionsContainer {
+    justify-content: center;
+    align-items: center;
+}
+
+#gameWrap {
+    justify-content: center;
+    align-items: center;
+}
+
+#gameContainer {
+    width: 30%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    height: 15rem;
+    text-align: center;
+}
+
+#gameContainer.img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#scoreContainer {
+    width: 30%;
+    display: grid;
+    margin: 1rem;
+    height: 15rem;
+    font-size: x-large;
+}
+
+#game-over {
+    width: auto;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input, select {
+    display: flex;
+    width: auto;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+pre {
+    background: transparent;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: 1px solid grey;
+    background: #110000;
+    background: linear-gradient(180deg,rgba(8,0,0,1) 0%, rgba(46,15,0,1) 65%, rgba(135,70,0,1)100%);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: rgb(255,209,155);
+    box-shadow: 0px 0px 10px 2px rgb(255,164,36, 0.9);
+    transition: 0.3s;
+}
+
+button.active {
+    color: #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+.centeredContent {
+    justify-content: center;
+    align-items: center;
+}
